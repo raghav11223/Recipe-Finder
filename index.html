@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍲 Recipe Finder</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for recipes... (e.g. paneer, pasta)" />
+      <select id="cuisineSelect">
+        <option value="">All Cuisines</option>
+        <option value="Indian">Indian</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Mexican">Mexican</option>
+        <option value="American">American</option>
+      </select>
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading" class="loading">Loading recipes...</div>
+    <div id="recipeContainer" class="recipe-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
